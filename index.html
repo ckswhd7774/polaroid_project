@@ -1,33 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team mild flavor</title>
-    <script src="https://kit.fontawesome.com/bb1e4b6180.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-logo">mild flavor polaroid</h1>
-    </header>
-    <main class="main">
-        <div></div>
-        <div class="polaroid">
-            <div class="polaroid-image">
-                <input type="file", class="image-input">
-                <!--<a href ="#"><i class="fas fa-camera-retro"></i></a> -->
-                <img class="image-view", src="", alt="view">
-            </div>
-            <ul class="polaroid-list">
-                <li class="polaroid-list-date">2021.04.03</li>
-                <li class="polaroid-list-location">hong kong</li>
-                <li class="polaroid-list-comment">chungking mension</li>
-            </ul>
-        </div>
-        <div></div>
-    </main>
-    <footer class="footer"></footer>
-    <script src="app.js"></script>
+  <header class="header">
+    <h1 class="logo">
+      <a href="#">LOGO</a>
+      <img src=" " alt="">
+    </h1>
+    <ul class="nav">
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">회원가입</a></li>
+    </ul>
+  </header>
+  <main class="wrapper">
+    <!--  css로 인라인 블럭 처리  -->
+    <ul class="input_info"> 
+      <li class="date">
+        <label for="#date">
+          <p>Date</p>
+        </label>
+        <input type="text" id="date" placeholder="날짜 입력">
+      </li>
+      <li class="location">
+        <label for="#location">
+          <p>Location</p>
+        </label>
+        <input type="text" id="location" placeholder="위치 입력">
+      </li>
+      <li class="comment">
+        <label for="#comment">
+          <p>Comment</p>
+          <span>코멘트 입력</span>
+        </label>
+        <input type="text" id="comment">
+      </li>
+    </ul>
+    <ul class="photo_slide">
+      <li>
+        <!-- 이미지태그를 형제요소로 만들고 display nene으로 숨긴다 -->
+        <!-- 자바스크립트로 구현 -->
+        <input class="input-file" type="file" accept="image/*" />
+        <button class="upload">+</button>
+        <img class="upload-image" alt="" />
+      </li>
+      <li>
+        <!-- 이미지태그를 형제요소로 만들고 display none으로 숨긴다 -->
+        <!-- 자바스크립트로 구현 -->
+        <input class="input-file" type="file" accept="image/*" />
+        <button class="upload">+</button>
+        <img class="upload-image" alt="" />
+      </li>
+      <li>
+        <!-- 이미지태그를 형제요소로 만들고 display nene으로 숨긴다 -->
+        <!-- 자바스크립트로 구현 -->
+        <input class="input-file" type="file" accept="image/*" />
+        <button class="upload">+</button>
+        <img class="upload-image" alt="" />
+      </li>
+    </ul>
+  </main>
 </body>
+<script src=""></script>
 </html>
