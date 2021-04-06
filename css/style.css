@@ -30,6 +30,23 @@ body {
   bottom: -90px;
   right: 50%;
 }
+.main-greeting-hello {
+  font-size: 50px;
+}
+.input-name {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3333;
+  color: #555;
+  border-color: #e7ecee;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color;
+}
+.input-name:focus {
+  border-color: #23b7e5;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
 .section-1, .section-2, .section-3 {
   background-color: wheat;
   margin: 20px;
@@ -62,23 +79,22 @@ body {
 .polaroid-form {
   background-color: slategray;
   padding-top: 15px;
-  height: 80px;
+  height: 90px;
   font-size: 1.3em;
-
+  text-align: justify;
 }
 .heart {
   position: absolute;
-  top: -20px;
-  right: 0;
+  top: -5px;
+  right: 5px;
 }
 .delete-button {
   position: absolute;
-  top: -35px;
+  top: -30px;
   right: 50%;
 }
 .footer {
   height: 15vh;
-  background-color: teal;
 }
 .carousel-left {
   position: absolute;
