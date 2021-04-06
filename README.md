@@ -1,10 +1,29 @@
-# polaroid_project
-team mild
+# ***polaroid_project***
+
+
+## **team_mild**
+
+
+#### project_goal
+review basic frontent skills and expend knowledge in javascript
 
 ### team_member
 박찬경
 박찬종
 오지윤
 
-#### project_goal
-review basic frontent skills and expend knowledge about javascript
+
+### Project Log
+* Day1
+    * edited basic markup
+    * partial css styling
+    * js image input using local storage
+
+
+
+
+
+
+
+
+ 
