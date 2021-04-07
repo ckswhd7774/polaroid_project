@@ -9,6 +9,7 @@ removeButton.onclick = () => {
     localStorage.removeItem('recentImage4');
     localStorage.removeItem('recentImage5');
     localStorage.removeItem('recentImage6');
+    localStorage.removeItem('username');
 };
 
 
