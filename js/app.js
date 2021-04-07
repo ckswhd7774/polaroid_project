@@ -41,9 +41,9 @@ $imageInput1.onchange = e => {
 
 $imageInput2.onchange = e => {
   console.log(e.target.id);
-  const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
-  reader.onload = () => localStorage.setItem('recentImage2', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
-  reader.readAsDataURL($imageInput2.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
+  const reader = new FileReader(); 
+  reader.onload = () => localStorage.setItem('recentImage2', reader.result); 
+  reader.readAsDataURL($imageInput2.files[0]); 
   const recentImageDataUrl = localStorage.getItem('recentImage2'); // key가 recentImage인 value값을 읽어옴
   $imageView2.setAttribute('src', recentImageDataUrl)
   $imageInput2.style.display = 'none';
