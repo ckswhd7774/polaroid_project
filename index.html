@@ -35,11 +35,20 @@
             </form>
             <img class="image-view image-view1" src="#" alt="view">
           </div>
-          <form class="polaroid-form">
-            <input type="text" class="polaroid-form-date">
-            <input type="text" class="polaroid-form-location">
-            <input type="text" class="polaroid-form-comment">
-          </form>
+          <div class="polaroid-form">
+            <form class="date-form">
+              <span class="date-text">날짜</span>
+              <input type="text" class="polaroid-form-date" placeholder="Enter Date">
+            </form>
+            <form class="location-form">
+              <sapn class="location-text">위치</sapn>
+              <input type="text" class="polaroid-form-location" placeholder="Enter Location">
+            </form>
+            <form class="comment-form">
+              <span class="comment-text">메모</span>
+              <input type="text" class="polaroid-form-comment" placeholder="Enter Comment">
+            </form>
+          </div>
           <img class="heart" src="images/heartOn4.png" alt="heart"> <!--하트-->
           <button class="delete-button delete-button1">X</button>
         </div>
@@ -120,8 +129,8 @@
         </div>
       </div>
     </section>
-      <button class="carousel-left">left</button>
-      <button class="carousel-right">right</button>
+      <span class="carousel-left"><</span>
+      <span class="carousel-right">></span>
   </main>
   <footer class="footer">
     <address>Copyright&copy; 2021 team_mild</address>

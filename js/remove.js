@@ -32,7 +32,7 @@ removeButton5.onclick = () => {
 };
 
 removeButton6.onclick = () => {
-    console.log(remove);
-    localStorage.removeItem('recentImage6');
+  console.log(remove);
+  localStorage.removeItem('recentImage6');
 };
 
