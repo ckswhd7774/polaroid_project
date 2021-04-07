@@ -15,7 +15,7 @@ const greetingInput = e => {
 };
 const greetingText = () => {
   if (localStorage.getItem(USERNAME) === null) {
-    $greetingText.innerText = "이름을 입력하세요";
+    $greetingText.innerText = "Enter your namE";
   } else {
     $greetingText.innerText = `안녕하세요. ${localStorage.getItem(USERNAME)}님 :)`;
     $greetingInput.style.display = "none"
