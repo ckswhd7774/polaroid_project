@@ -56,3 +56,11 @@ removeButton6.onclick = () => {
   $polaroid6.classList.toggle('active');
 };
 
+// 로그아웃 버튼 클릭 시 모든 데이터 삭제
+
+const $logout = document.querySelector('.logout');
+
+$logout.onclick = () => {
+  console.log("logout!");
+  // localStorage.clear();
+};
