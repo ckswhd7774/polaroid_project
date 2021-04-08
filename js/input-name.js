@@ -125,7 +125,7 @@ const DateInput2 = () => {
 
 const DateText2 = () => {
   if (localStorage.getItem(DATE2) === null) {
-    $dateText2.innerText = "date2";
+    $dateText2.innerText = "date";
   } else {
     $dateText2.innerText = localStorage.getItem(DATE2);
     $dateinput2.style.display = "none";
@@ -147,7 +147,7 @@ const LocationInput2 = () => {
 }
 const LocationText2 = () => {
   if (localStorage.getItem(LOCATION2) === null) {
-    $locationText2.innerText = "location2";
+    $locationText2.innerText = "location";
   } else {
     $locationText2.innerText = localStorage.getItem(LOCATION2);
     $locationInput2.style.display = "none";
@@ -170,7 +170,7 @@ const CommentInput2 = () => {
 };
 const CommentText2 = () => {
   if (localStorage.getItem(COMMENT2) === null) {
-    $commentText2.innerText = "comment2"
+    $commentText2.innerText = "comment"
   } else {
     $commentText2.innerText = localStorage.getItem(COMMENT2);
     $commentInput2.style.display = "none";
@@ -201,7 +201,7 @@ const DateInput3 = () => {
 
 const DateText3 = () => {
   if (localStorage.getItem(DATE3) === null) {
-    $dateText3.innerText = "date3";
+    $dateText3.innerText = "date";
   } else {
     $dateText3.innerText = localStorage.getItem(DATE3);
     $dateinput3.style.display = "none";
@@ -223,7 +223,7 @@ const LocationInput3 = () => {
 }
 const LocationText3 = () => {
   if (localStorage.getItem(LOCATION3) === null) {
-    $locationText3.innerText = "location3";
+    $locationText3.innerText = "location";
   } else {
     $locationText3.innerText = localStorage.getItem(LOCATION3);
     $locationInput3.style.display = "none";
@@ -245,7 +245,7 @@ const CommentInput3 = () => {
 };
 const CommentText3 = () => {
   if (localStorage.getItem(COMMENT3) === null) {
-    $commentText3.innerText = "comment3"
+    $commentText3.innerText = "comment"
   } else {
     $commentText3.innerText = localStorage.getItem(COMMENT3);
     $commentInput3.style.display = "none";
@@ -275,7 +275,7 @@ const DateInput4 = () => {
 
 const DateText4 = () => {
   if (localStorage.getItem(DATE4) === null) {
-    $dateText4.innerText = "date4";
+    $dateText4.innerText = "date";
   } else {
     $dateText4.innerText = localStorage.getItem(DATE4);
     $dateinput4.style.display = "none";
@@ -297,7 +297,7 @@ const LocationInput4 = () => {
 }
 const LocationText4 = () => {
   if (localStorage.getItem(LOCATION4) === null) {
-    $locationText4.innerText = "location4";
+    $locationText4.innerText = "location";
   } else {
     $locationText4.innerText = localStorage.getItem(LOCATION4);
     $locationInput4.style.display = "none";
@@ -319,7 +319,7 @@ const CommentInput4 = () => {
 };
 const CommentText4 = () => {
   if (localStorage.getItem(COMMENT4) === null) {
-    $commentText4.innerText = "comment4"
+    $commentText4.innerText = "comment"
   } else {
     $commentText4.innerText = localStorage.getItem(COMMENT4);
     $commentInput4.style.display = "none";
@@ -349,7 +349,7 @@ const DateInput5 = () => {
 
 const DateText5 = () => {
   if (localStorage.getItem(DATE5) === null) {
-    $dateText5.innerText = "date5";
+    $dateText5.innerText = "date";
   } else {
     $dateText5.innerText = localStorage.getItem(DATE5);
     $dateinput5.style.display = "none";
@@ -371,7 +371,7 @@ const LocationInput5 = () => {
 }
 const LocationText5 = () => {
   if (localStorage.getItem(LOCATION5) === null) {
-    $locationText5.innerText = "location5";
+    $locationText5.innerText = "location";
   } else {
     $locationText5.innerText = localStorage.getItem(LOCATION5);
     $locationInput5.style.display = "none";
@@ -393,7 +393,7 @@ const CommentInput5 = () => {
 };
 const CommentText5 = () => {
   if (localStorage.getItem(COMMENT5) === null) {
-    $commentText5.innerText = "comment5"
+    $commentText5.innerText = "comment"
   } else {
     $commentText5.innerText = localStorage.getItem(COMMENT5);
     $commentInput5.style.display = "none";
@@ -423,7 +423,7 @@ const DateInput6 = () => {
 
 const DateText6 = () => {
   if (localStorage.getItem(DATE6) === null) {
-    $dateText6.innerText = "date6";
+    $dateText6.innerText = "date";
   } else {
     $dateText6.innerText = localStorage.getItem(DATE6);
     $dateinput6.style.display = "none";
@@ -445,7 +445,7 @@ const LocationInput6 = () => {
 }
 const LocationText6 = () => {
   if (localStorage.getItem(LOCATION6) === null) {
-    $locationText6.innerText = "location6";
+    $locationText6.innerText = "location";
   } else {
     $locationText6.innerText = localStorage.getItem(LOCATION6);
     $locationInput6.style.display = "none";
@@ -467,7 +467,7 @@ const CommentInput6 = () => {
 };
 const CommentText6 = () => {
   if (localStorage.getItem(COMMENT6) === null) {
-    $commentText6.innerText = "comment6"
+    $commentText6.innerText = "comment"
   } else {
     $commentText6.innerText = localStorage.getItem(COMMENT6);
     $commentInput6.style.display = "none";
