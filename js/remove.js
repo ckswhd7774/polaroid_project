@@ -15,13 +15,14 @@ const $polaroid6 = document.querySelector('.polaroid6');
 const $pols = document.querySelector('.polaroids');
 
 // X 버튼 클릭 시 데이터 삭제 
-const $polaroidForm = document.querySelector('.polaroid-form')
+const $polaroidForm1 = document.querySelector('.polaroid-form1')
 const $polaroidForm2 = document.querySelector('.polaroid-form2')
 const $polaroidForm3 = document.querySelector('.polaroid-form3')
 const $polaroidForm4 = document.querySelector('.polaroid-form4')
 const $polaroidForm5 = document.querySelector('.polaroid-form5')
 const $polaroidForm6 = document.querySelector('.polaroid-form6')
 
+const $logOut = document.querySelector('.logout');
 
 
 removeButton1.onclick = () => {
@@ -32,7 +33,7 @@ removeButton1.onclick = () => {
   localStorage.removeItem(LOCATION);
   localStorage.removeItem(COMMENT);
   $imageViewer1.innerHTML = `<img class="image-view image-view1" src="#" alt="view1">`; 
-  $polaroidForm.innerHTML = `
+  $polaroidForm1.innerHTML = `
             <form class="date-form">
               <span class="date-text">date</span>
               <input type="text" class="polaroid-form-date" placeholder="Enter Date">
@@ -76,7 +77,9 @@ removeButton3.onclick = () => {
   localStorage.removeItem(DATE3);
   localStorage.removeItem(LOCATION3);
   localStorage.removeItem(COMMENT3);
-  $imageViewer3.innerHTML = `<img class="image-view image-view3" src="#" alt="view1">`; 
+  $imageViewer3.innerHTML = `
+  
+  <img class="image-view image-view3" src="#" alt="view1">`; 
   $polaroidForm3.innerHTML = `
             <form class="date-form3">
               <span class="date-text3">date</span>
@@ -160,3 +163,9 @@ removeButton6.onclick = () => {
               <input type="text" class="polaroid-form-comment6" placeholder="Enter Comment">
             </form>`
 };
+
+$logOut.onclick = () => {
+  localStorage.removeItem(USERNAME);
+  $greetingForm.innerHTML = `<h2 class="main-greeting-hello">Enter your name</h2>
+  <input class="input-name" type="text" placeholder="이름을 입력하세요" max="10">`
+}
