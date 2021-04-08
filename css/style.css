@@ -157,6 +157,9 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
+.heart.active{
+  border: none;
+}
 .delete-button {
   position: absolute;
   top: -50px;
