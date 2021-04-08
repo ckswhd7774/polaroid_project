@@ -16,8 +16,7 @@ const greetingText = () => {
   if (localStorage.getItem(USERNAME) === null) {
     $greetingText.innerText = "Enter your name";
   } else {
-    $greetingText.innerText = `안녕하세요. 
-    ${localStorage.getItem(USERNAME)}님 :)`;
+    $greetingText.innerText = `Hello. ${localStorage.getItem(USERNAME)} :)`;
     $greetingInput.style.display = "none"
   }
 };
@@ -26,8 +25,8 @@ const greetingInit = () => {
   $greetingForm.addEventListener("submit", greetingInput);
 };
 
-greetingInit();
-
+greetingInit()
+// document.querySelector('DOMContentLoaded', greetingInit)
 
 //  사진 밑에 있는 텍스트 (Date, Location, Comment)
 // const DATE = ["date1", "date2", "date3", "date4", "date5", "date6"];

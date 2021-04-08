@@ -164,8 +164,10 @@ removeButton6.onclick = () => {
             </form>`
 };
 
+
+
 $logOut.onclick = () => {
   localStorage.removeItem(USERNAME);
-  $greetingForm.innerHTML = `<h2 class="main-greeting-hello">Enter your name</h2>
-  <input class="input-name" type="text" placeholder="이름을 입력하세요" max="10">`
+  $greetingForm.textConet = '';
+  location.reload();
 }
