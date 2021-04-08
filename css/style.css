@@ -35,25 +35,30 @@ body {
 .main-greeting {
   position:absolute;
   color: #e7ecee;
+  right: calc(50% - 158px);
   top: -5vh;
 }
 .main-greeting-hello {
-  font-size: 50px;
+  font-size: 2.5rem;
 }
+
 .input-name {
   display: block;
   font-size: 18px;
   line-height: 1.3333;
-  color: #555;
-  border-color: #e7ecee;
-  border-radius: 6px;
+  border: none;
+  color: #E6E5E6;
+  border-bottom: 2px solid #E6E5E6;
   outline: none;
-  transition: border-color;
+  background: transparent;
 }
-.input-name:focus {
-  border-color: #23b7e5;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+
+.input-name::placeholder{
+  text-align: center;
+  color: #E6E5E6;
 }
+
+
 .a11y-hidden {
   background-color: violet;
   height: 0px;
@@ -61,6 +66,7 @@ body {
   overflow: hidden;
 }
 .polaroid-slider {
+  z-index: 1;
   margin: auto;
   width: 1110px;
   height: 550px;
@@ -109,6 +115,20 @@ body {
   font-size: 1.3em;
   text-align: justify;
 }
+
+.polaroid-form input{
+  border-radius: 5px;
+  float: right;
+  border: none;
+  color: black;
+}
+
+.location-form {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+
 .heart {
   position: absolute;
   bottom: 130px;
@@ -142,18 +162,36 @@ body {
   bottom: 0px;
   margin: 0 auto;
 }
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #E6E5E6;
+  color: #090909;
+  opacity: 0.5;
+  transition: 0.3s;
+  
+}
+
 .carousel-left {
   text-align: center;
-  vertical-align: middle;
   color: #e7ecee;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   bottom: 50%;
+  left: 10px;
+  cursor: pointer
 }
+
+
+
+
 .carousel-right {
   text-align: center;
   position: absolute;
@@ -161,9 +199,41 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.5);
+  border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   bottom: 50%;
-  right: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1951px) {
+  .polaroid-slider {
+    width: 1870px
+  }
+}
+
+@media all and (min-width: 1551px) and (max-width: 1950px) {
+  .polaroid-slider {
+    width: 1490px;
+  }
+}
+
+@media all  and (min-width: 1251px) and (max-width: 1550px) {
+  .polaroid-slider {
+    width: 1110px;
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1250px) {
+  .polaroid-slider {
+    width: 730px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .polaroid-slider {
+    width: 380px;
+  }
 }
