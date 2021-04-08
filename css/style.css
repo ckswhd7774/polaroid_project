@@ -7,6 +7,18 @@
   position: relative;
 }
 
+
+.logout {
+  top: 10px;
+}
+
+.logout button{
+  color: #E6E5E6;
+  border:none;
+  background-color: #090909;
+  border-bottom: 1px solid #E6E5E6;
+}
+
 .header-logo {
   position: absolute;
   left: 23px;
