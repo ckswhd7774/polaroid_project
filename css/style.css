@@ -6,6 +6,21 @@
   height: 10vh;
   position: relative;
 }
+
+.header-logo {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  width: 175px;
+  height:70px;
+}
+
+.header-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header-nav {
   position: absolute;
   top: 0;
@@ -36,7 +51,7 @@ body {
   position:absolute;
   color: #e7ecee;
   right: calc(50% - 158px);
-  top: -5vh;
+  top: -10vh;
 }
 .main-greeting-hello {
   font-size: 2.5rem;
@@ -163,11 +178,23 @@ body {
   margin: 0 auto;
 }
 
-button:focus {
+.carousel-left:focus {
   outline: 0;
 }
 
-button:hover {
+.carousel-left:hover {
+  background-color: #E6E5E6;
+  color: #090909;
+  opacity: 0.5;
+  transition: 0.3s;
+  
+}
+
+.carousel-right:focus {
+  outline: 0;
+}
+
+.carousel-right:hover {
   background-color: #E6E5E6;
   color: #090909;
   opacity: 0.5;
@@ -186,7 +213,8 @@ button:hover {
   height: 50px;
   bottom: 50%;
   left: 10px;
-  cursor: pointer
+  cursor: pointer;
+  outline: 0;
 }
 
 
@@ -205,10 +233,9 @@ button:hover {
   height: 50px;
   bottom: 50%;
   right: 10px;
-  cursor: pointer;
 }
 
-@media all and (max-width: 1951px) {
+@media all and (min-width: 1951px) {
   .polaroid-slider {
     width: 1870px
   }
