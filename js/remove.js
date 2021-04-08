@@ -21,9 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
 removeButton1.onclick = () => {
   console.log('remove');
   localStorage.removeItem('recentImage1');
+  localStorage.removeItem(DATE);
+  $imageViewer1.innerHTML = `<img class="image-view image-view1" src="#" alt="view1">`; 
+  $dateForm.innerHTML = `
+  <form class="date-form">
+    <span class="date-text">date</span>
+    <input type="text" class="polaroid-form-date" placeholder="Enter Date">
+  </form>`
+  
   $polaroid1.classList.toggle('active');
-  // $pol.style.transform = "translateY(100%)";
-  // $pol.style.transition = "0.5s ease-out";
 };
 
 removeButton2.onclick = () => {
@@ -57,10 +63,26 @@ removeButton6.onclick = () => {
 };
 
 // 로그아웃 버튼 클릭 시 모든 데이터 삭제
-
+const $polaroidForm = document.querySelector('.polaroid-form')
 const $logout = document.querySelector('.logout');
 
 $logout.onclick = () => {
   console.log("logout!");
-  // localStorage.clear();
+  localStorage.clear();
+  
+  // $pols.innerHTML = `
+  // <img class="image-view image-view1" src="#" alt="view">`
+  // $polaroidForm.innerHTML = `
+  // <form class="date-form">
+  //   <span class="date-text">date</span>
+  //   <input type="text" class="polaroid-form-date" placeholder="Enter Date">
+  // </form>
+  // <form class="location-form">
+  //   <sapn class="location-text">location</sapn>
+  //   <input type="text" class="polaroid-form-location" placeholder="Enter Location">
+  // </form>
+  // <form class="comment-form">
+  //   <span class="comment-text">comment</span>
+  //   <input type="text" class="polaroid-form-comment" placeholder="Enter Comment">
+  // </form>`
 };
