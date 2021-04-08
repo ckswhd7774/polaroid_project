@@ -22,11 +22,14 @@ review basic frontent skills and expend knowledge in javascript
 
 * Day 2
     * successfully images are being uploaded on polaroids by using local storage
-
     * successfully built a carousel slider
     * re-edited html and css
     * succesfully built todo list
 
+* Day 3
+    * resolved polaroid text input problem
+    * resolved polaroid file input problem
+    * added delete animation with transitionY
 
 
 
