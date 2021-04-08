@@ -51,7 +51,7 @@ removeButton5.onclick = () => {
 };
 
 removeButton6.onclick = () => {
-  console.log(remove);
+  console.log('remove');
   localStorage.removeItem('recentImage6');
   $polaroid6.classList.toggle('active');
 };
