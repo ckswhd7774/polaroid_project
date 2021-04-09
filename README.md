@@ -31,8 +31,11 @@ review basic frontent skills and expend knowledge in javascript
     * resolved polaroid file input problem
     * added delete animation with transitionY
 
-
-
+* Day 4
+    * debug
+    * looked up unnecessary codes
+    * added heart animation
+    * prepared demonstration materials
 
 
 
