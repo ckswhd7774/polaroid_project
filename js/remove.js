@@ -24,7 +24,6 @@ const $polaroidForm6 = document.querySelector('.polaroid-form6')
 
 const $logOut = document.querySelector('.logout');
 
-
 removeButton1.onclick = () => {
   console.log('remove');
   localStorage.removeItem('recentImage1');
@@ -32,7 +31,7 @@ removeButton1.onclick = () => {
   localStorage.removeItem(DATE);
   localStorage.removeItem(LOCATION);
   localStorage.removeItem(COMMENT);
-  $imageViewer1.innerHTML = `<img class="image-view image-view1" src="#" alt="view1">`; 
+  $imageViewer1.innerHTML = `<img class="image-view image-view1" src="#" alt="image1">`; 
   $polaroidForm1.innerHTML = `
             <form class="date-form">
               <span class="date-text">date</span>
@@ -45,8 +44,9 @@ removeButton1.onclick = () => {
             <form class="comment-form">
               <span class="comment-text">comment</span>
               <input type="text" class="polaroid-form-comment" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
+
 removeButton2.onclick = () => {
   console.log('remove');
   localStorage.removeItem('recentImage2');
@@ -54,7 +54,7 @@ removeButton2.onclick = () => {
   localStorage.removeItem(DATE2);
   localStorage.removeItem(LOCATION2);
   localStorage.removeItem(COMMENT2);
-  $imageViewer2.innerHTML = `<img class="image-view image-view2" src="#" alt="view1">`; 
+  $imageViewer2.innerHTML = `<img class="image-view image-view2" src="#" alt="image2">`; 
   $polaroidForm2.innerHTML = `
             <form class="date-form2">
               <span class="date-text2">date</span>
@@ -67,7 +67,7 @@ removeButton2.onclick = () => {
             <form class="comment-form2">
               <span class="comment-text2">comment</span>
               <input type="text" class="polaroid-form-comment2" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
 
 removeButton3.onclick = () => {
@@ -77,9 +77,7 @@ removeButton3.onclick = () => {
   localStorage.removeItem(DATE3);
   localStorage.removeItem(LOCATION3);
   localStorage.removeItem(COMMENT3);
-  $imageViewer3.innerHTML = `
-  
-  <img class="image-view image-view3" src="#" alt="view1">`; 
+  $imageViewer3.innerHTML = `<img class="image-view image-view3" src="#" alt="image3">`; 
   $polaroidForm3.innerHTML = `
             <form class="date-form3">
               <span class="date-text3">date</span>
@@ -92,7 +90,7 @@ removeButton3.onclick = () => {
             <form class="comment-form3">
               <span class="comment-text3">comment</span>
               <input type="text" class="polaroid-form-comment3" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
 
 removeButton4.onclick = () => {
@@ -102,7 +100,7 @@ removeButton4.onclick = () => {
   localStorage.removeItem(DATE4);
   localStorage.removeItem(LOCATION4);
   localStorage.removeItem(COMMENT4);
-  $imageViewer4.innerHTML = `<img class="image-view image-view4" src="#" alt="view1">`; 
+  $imageViewer4.innerHTML = `<img class="image-view image-view4" src="#" alt="image4">`; 
   $polaroidForm4.innerHTML = `
             <form class="date-form4">
               <span class="date-text4">date</span>
@@ -115,7 +113,7 @@ removeButton4.onclick = () => {
             <form class="comment-form4">
               <span class="comment-text4">comment</span>
               <input type="text" class="polaroid-form-comment4" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
 
 removeButton5.onclick = () => {
@@ -125,7 +123,7 @@ removeButton5.onclick = () => {
   localStorage.removeItem(DATE5);
   localStorage.removeItem(LOCATION5);
   localStorage.removeItem(COMMENT5);
-  $imageViewer5.innerHTML = `<img class="image-view image-view5" src="#" alt="view1">`; 
+  $imageViewer5.innerHTML = `<img class="image-view image-view5" src="#" alt="image5">`; 
   $polaroidForm5.innerHTML = `
             <form class="date-form5">
               <span class="date-text5">date</span>
@@ -138,7 +136,7 @@ removeButton5.onclick = () => {
             <form class="comment-form5">
               <span class="comment-text5">comment</span>
               <input type="text" class="polaroid-form-comment5" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
 
 removeButton6.onclick = () => {
@@ -148,7 +146,7 @@ removeButton6.onclick = () => {
   localStorage.removeItem(DATE6);
   localStorage.removeItem(LOCATION6);
   localStorage.removeItem(COMMENT6);
-  $imageViewer6.innerHTML = `<img class="image-view image-view6" src="#" alt="view1">`; 
+  $imageViewer6.innerHTML = `<img class="image-view image-view6" src="#" alt="image6">`; 
   $polaroidForm6.innerHTML = `
             <form class="date-form6">
               <span class="date-text6">date</span>
@@ -161,13 +159,11 @@ removeButton6.onclick = () => {
             <form class="comment-form6">
               <span class="comment-text6">comment</span>
               <input type="text" class="polaroid-form-comment6" placeholder="Enter Comment">
-            </form>`
+            </form>`;
 };
-
-
 
 $logOut.onclick = () => {
   localStorage.removeItem(USERNAME);
   $greetingForm.textConet = '';
   location.reload();
-}
+};

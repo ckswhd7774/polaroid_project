@@ -34,87 +34,87 @@ const $imageViewer6 = document.querySelector('.image6');
 
 /* 이벤트 핸들러 부분*/
 
-$imageInput1.onchange = e => {
-  console.log(e.target.id);
+$imageInput1.onchange = () => {
+  console.log('image uploaded');
   const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
   
   reader.onload = () => {
     localStorage.setItem('recentImage1', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
     const recentImageDataUrl = localStorage.getItem('recentImage1'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer1.innerHTML = `<img class="image-view image-view1" src="${recentImageDataUrl}" alt="view1">`; 
+    $imageViewer1.innerHTML = `<img class="image-view image-view1" src="${recentImageDataUrl}" alt="image1">`; 
   };
   
   reader.readAsDataURL($imageInput1.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
   $imageInput1.style.display = 'none';
 };
 
-$imageInput2.onchange = e => {
-  console.log(e.target.id);
+$imageInput2.onchange = () => {
+  console.log('image uploaded');
   const reader = new FileReader(); 
   
   reader.onload = () => {
     localStorage.setItem('recentImage2', reader.result); 
-    const recentImageDataUrl = localStorage.getItem('recentImage2'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer2.innerHTML = `<img class="image-view image-view2" src="${recentImageDataUrl}" alt="view2">`; 
+    const recentImageDataUrl = localStorage.getItem('recentImage2'); 
+    $imageViewer2.innerHTML = `<img class="image-view image-view2" src="${recentImageDataUrl}" alt="image2">`; 
   };
   
   reader.readAsDataURL($imageInput2.files[0]); 
   $imageInput2.style.display = 'none';
 };
 
-$imageInput3.onchange = e => {
-  console.log(e.target.id);
-  const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
-  
+$imageInput3.onchange = () => {
+  console.log('image uploaded');
+  const reader = new FileReader(); 
+
   reader.onload = () => {
-    localStorage.setItem('recentImage3', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
-    const recentImageDataUrl = localStorage.getItem('recentImage3'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer3.innerHTML = `<img class="image-view image-view3" src="${recentImageDataUrl}" alt="view3">`; 
+    localStorage.setItem('recentImage3', reader.result);  
+    const recentImageDataUrl = localStorage.getItem('recentImage3'); 
+    $imageViewer3.innerHTML = `<img class="image-view image-view3" src="${recentImageDataUrl}" alt="image3">`; 
   }; 
   
-  reader.readAsDataURL($imageInput3.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
+  reader.readAsDataURL($imageInput3.files[0]); 
   $imageInput3.style.display = 'none';
 };
 
-$imageInput4.onchange = e => {
-  console.log(e.target.id);
-  const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
+$imageInput4.onchange = () => {
+  console.log('image uploaded');
+  const reader = new FileReader(); 
   
   reader.onload = () => {
-    localStorage.setItem('recentImage4', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
-    const recentImageDataUrl = localStorage.getItem('recentImage4'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer4.innerHTML = `<img class="image-view image-view4" src="${recentImageDataUrl}" alt="view4">`; 
+    localStorage.setItem('recentImage4', reader.result); 
+    const recentImageDataUrl = localStorage.getItem('recentImage4'); 
+    $imageViewer4.innerHTML = `<img class="image-view image-view4" src="${recentImageDataUrl}" alt="image4">`; 
   };
   
-  reader.readAsDataURL($imageInput4.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
+  reader.readAsDataURL($imageInput4.files[0]); 
   $imageInput4.style.display = 'none';
 };
 
-$imageInput5.onchange = e => {
-  console.log(e.target.id);
-  const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
+$imageInput5.onchange = () => {
+  console.log('image uploaded');
+  const reader = new FileReader(); 
   
   reader.onload = () => {
-    localStorage.setItem('recentImage5', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
-    const recentImageDataUrl = localStorage.getItem('recentImage5'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer5.innerHTML = `<img class="image-view image-view5" src="${recentImageDataUrl}" alt="view5">`;  
+    localStorage.setItem('recentImage5', reader.result);  
+    const recentImageDataUrl = localStorage.getItem('recentImage5'); 
+    $imageViewer5.innerHTML = `<img class="image-view image-view5" src="${recentImageDataUrl}" alt="image5">`;  
   };
   
-  reader.readAsDataURL($imageInput5.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
+  reader.readAsDataURL($imageInput5.files[0]); 
   $imageInput5.style.display = 'none';
 };
 
-$imageInput6.onchange = e => {
-  console.log(e.target.id);
-  const reader = new FileReader(); // 비동기적으로 유저 컴퓨터에 저장된 파일을 읽어옴
+$imageInput6.onchange = () => {
+  console.log('image uploaded');
+  const reader = new FileReader(); 
   
   reader.onload = () => {
-    localStorage.setItem('recentImage6', reader.result); // recentImage value에 reader가 읽어온 result를 지정함. localStorage에 이미지 저장하는 함수 
-    const recentImageDataUrl = localStorage.getItem('recentImage6'); // key가 recentImage인 value값을 읽어옴
-    $imageViewer6.innerHTML = `<img class="image-view image-view6" src="${recentImageDataUrl}" alt="view6">`;    
+    localStorage.setItem('recentImage6', reader.result);  
+    const recentImageDataUrl = localStorage.getItem('recentImage6'); 
+    $imageViewer6.innerHTML = `<img class="image-view image-view6" src="${recentImageDataUrl}" alt="image6">`;    
   };
   
-  reader.readAsDataURL($imageInput6.files[0]); // readAsDataURL가 file에서 이미지를 읽어온 후 image-view에서 보여줌
+  reader.readAsDataURL($imageInput6.files[0]); 
   $imageInput6.style.display = 'none';
 };
 
