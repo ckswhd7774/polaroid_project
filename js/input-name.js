@@ -480,3 +480,13 @@ const CommentInit6 = () => {
 };
 
 CommentInit6();
+
+const $polaAll = document.getElementById('polaAll');
+
+// $polaAll.onkeypress = e => {
+//   console.log(e)
+//   if (e.key === 'Enter') 
+//     console.log('hi');
+//   //   document.getElementsByTagName().focus();
+
+// };
